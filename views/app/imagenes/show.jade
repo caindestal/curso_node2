@@ -1,0 +1,11 @@
+extends ../../layout.jade
+block contenido
+  div(class="col-md-4 remove-float center-block big-top-space")
+    h1= imagen.title
+    h2= imagen.article
+    h3= imagen._id
+    h4= imagen.extension
+    img( src="/images/#{imagen._id}.#{imagen.extension}")
+    if (typeof imagen.creator != "undefined")
+      p Por #{imagen.creator.username}
+      

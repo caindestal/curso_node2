@@ -1,0 +1,18 @@
+extends ../../layout.jade
+block contenido
+  div(class="col-md-4 remove-float center-block big-top-space")
+    h1 Subir nuevo articulo
+    form(action="/app/imagenes",method="POST" enctype="multipart/form-data")
+      div(class="form-group")
+        label(for="title") Titulo de articulo
+        input(class="form-control",type="text", name="title", placeholder="Titulo de tu articulo", id="title")
+      div(class="text-area")
+        label(for="article") Articulo
+        textarea(class="form-control" rows="3",type="text-area",placeholder="Introduce tu Articulo", name="article", id="article")
+      div
+        label(for="archivo") Imagen
+        input(type="file", name="archivo", id="archivo")
+      div(class="row top-space")
+        div(class="col-xs-12 col-sm-6")
+          input(type="submit" value="Guardar articulo",class="btn btn-info")
+        

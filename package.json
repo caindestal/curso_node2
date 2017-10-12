@@ -1,0 +1,22 @@
+{
+  "name": "proyecto_codigofacilito",
+  "version": "1.0.0",
+  "description": "Proyecto de codigo facilito",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Francisco Aular",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
+    "cookie-session": "^2.0.0-beta.1",
+    "express": "^4.15.2",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.15.2",
+    "jade": "^1.11.0",
+    "method-override": "^2.3.8",
+    "mongoose": "^4.9.6"
+  }
+}
